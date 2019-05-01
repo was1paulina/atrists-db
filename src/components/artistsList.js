@@ -8,9 +8,9 @@ const ArtistsList = (props) => {
 			return allArtists.map((item) => {
 
 				const styles = {
-					background: `url('../../public/images/covers/${item.cover}.jpg')
-					no-repeat`
+					background: `url('/images/covers/${item.cover}.jpg') no-repeat`
 				}
+
 				return(
 					<Link key={item.id} to={`/artist/${item.id}`}
 						className="artist_item"
